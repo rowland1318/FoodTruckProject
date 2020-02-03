@@ -38,7 +38,7 @@ public class FoodTruckApp {
 					menuLoop = false;
 					break;
 				default:
-					System.out.println("Number Not Recognized! Please Select a Menu Item between 1 and 4: ");
+					System.out.println("Number Not Recognized! Please Select a Menu Item Between 1 and 4: ");
 				}
 			}
 		}
@@ -121,14 +121,14 @@ public class FoodTruckApp {
 	}
 	
 	public void highestRatedFoodTruck() {
-		int highestrating = Integer.MIN_VALUE;
+		int highestRating = Integer.MIN_VALUE;
 		FoodTruck highestratedfoodtruck = null;
 		for (int i = 0; i < foodTrucksList.length; i++) {
 			if (foodTrucksList[i] == null) {
 				break;
 			}
-			if (foodTrucksList[i].getFoodTruckRating() >= highestrating) {
-				highestrating = foodTrucksList[i].getFoodTruckRating();
+			if (foodTrucksList[i].getFoodTruckRating() >= highestRating) {
+				highestRating = foodTrucksList[i].getFoodTruckRating();
 				highestratedfoodtruck = foodTrucksList[i];
 			}
 			
@@ -138,7 +138,7 @@ public class FoodTruckApp {
 	
 	
 	public void quit() {
-		System.out.println("Thank you for using the Food Truck App");
+		System.out.println("Thank You for Using the Food Truck App");
 	}
 
 }
